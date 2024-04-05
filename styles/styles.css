@@ -1,0 +1,126 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: sans-serif;
+	overflow: auto;
+}
+
+header {
+    height: 3.5em;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #fffefe;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #9c9c9c;
+	outline: 2px solid #FFF;
+	outline-offset: -2px;
+	border: .1px solid #B7B7B7;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #909090;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.navbar {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    width: 100%;
+	background-color: rgb(31, 71, 108);
+	border-bottom: solid 4px darkorange;
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar li{
+    padding: 8px 12px;
+    list-style-type: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+	font-size: 20px;
+}
+
+.navbar .logo{
+    padding: 8px 22px;
+    width: 35px;
+    height: auto;
+    margin-right: auto;
+}
+
+.navbar a:hover {
+    color: darkorange;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.navbar .active{
+    text-decoration: underline;
+    color: white;
+}
+
+.subheading{
+    /* border-bottom: 1px solid grey; */
+    line-height: 4rem;
+    width: 100%;
+    
+}
+
+.subheading h1, h2, h3, h4, p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.cart-button {
+    text-decoration: none;
+    border: none;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 10px 30px;
+    margin: 10px;
+    width: 100%;
+}
+
+.cart-button:hover {
+    background-color: rgb(226, 126, 4);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}

@@ -1,1 +1,2 @@
-# CPS630-Project
+# CPS630-Project - Web Application
+
